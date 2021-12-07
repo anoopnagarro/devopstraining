@@ -22,14 +22,14 @@ pipeline {
         {
             steps
             {
-                sh 'docker build -t devopstraining .'
+                sh 'sudo docker build -t devopstraining .'
             }
         }
         stage('Docker run')
         {
             steps
             {
-                sh 'docker run -d --name anoop_devopstraining -p 8087:8080 devopstraining:latest'
+                sh 'sudo docker run -d --name anoop_devopstraining -p 8087:8080 devopstraining:latest'
             }
         }
          
