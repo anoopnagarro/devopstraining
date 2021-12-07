@@ -6,6 +6,7 @@ pipeline {
             steps {
                git changelog: false, credentialsId: 'githubcreds', poll: false, url: 'https://github.com/anoopnagarro/devopstraining'
             }
+          }
     
            stage ('Code Build') {
             steps {
