@@ -40,7 +40,7 @@ pipeline {
                 sh 'docker tag devopstraining:latest 831256243660.dkr.ecr.us-east-2.amazonaws.com/devopstraining:latest'
             }
         }
-        Stage('Push to ECR')
+        stage('Push to ECR')
         {
         	steps
         	{	
