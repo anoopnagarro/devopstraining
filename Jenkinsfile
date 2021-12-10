@@ -28,7 +28,7 @@ pipeline {
         {
             steps
             {
-                sh 'cp target/devopstraining-maven-0.0.1-SNAPSHOT.war /opt/tomcat/webapps/'
+                sh 'cp target/devopstraining-maven-0.0.1-SNAPSHOT.war /opt/tomcat9/webapps/'
             }
         }
         
