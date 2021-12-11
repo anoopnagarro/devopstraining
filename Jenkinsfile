@@ -52,8 +52,7 @@ pipeline {
         {
             steps
             {
-                sh 'docker rm anoop_devopstraining'
-                sh 'docker run -d --name anoop_devopstraining -p 8087:8080 devopstraining:latest'
+                sh 'docker run -d -p 8087:8080 devopstraining:latest'
             }
         }
          
