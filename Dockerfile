@@ -13,6 +13,7 @@ RUN mkdir tomcat9
 RUN mv apache-tomcat-9.0.55/* tomcat9/
 RUN cd tomcat9/webapps
 RUN curl -S -u admin:'Rudraksh@123' --output devopstraining.war http://3.16.161.236:8082/artifactory/sdc-anoop/com/nagarro/devopstraining-maven/0.0.1-SNAPSHOT/devopstraining-maven-0.0.1-SNAPSHOT.war
+RUN cd ../bin
 EXPOSE 8080
 
-CMD ["/opt/tomcat/tomcat9/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
