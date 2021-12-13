@@ -1,7 +1,3 @@
-terraform {
-  required_version = ">= 0.12"
-}
-
 provider "aws" {
 	region = "us-east-2"
 	access_key = "AKIA4DCV3VXGGFSM6EFB"
