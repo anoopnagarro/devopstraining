@@ -16,4 +16,4 @@ RUN curl -S -u admin:'Rudraksh@123' --output devopstraining.war http://3.16.161.
 RUN cd ../bin
 EXPOSE 8080
 
-CMD ["catalina.sh", "run"]
+CMD ["catalina.sh", "start"]

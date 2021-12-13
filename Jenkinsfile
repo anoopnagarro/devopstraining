@@ -55,6 +55,14 @@ pipeline {
                 sh 'docker run -d -p 8087:8080 devopstraining:latest'
             }
         }
+        stage('Provision ec2 instance using Terrafrom')
+        {
+            steps
+            {
+                sh 'terraform apply --auto-approve'
+            }
+        }
+
          
     }
 }
