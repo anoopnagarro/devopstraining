@@ -6,6 +6,7 @@ RUN mkdir /opt/tomcat
 RUN apt-get -y update
 RUN apt-get -y install curl
 RUN cd /opt/tomcat
+RUN pwd
 RUN curl --output /opt/tomcat/apache-tomcat-9.0.55.tar.gz https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.55/bin/apache-tomcat-9.0.55.tar.gz
 
 RUN tar xvfz /opt/tomcat/apache-tomcat-9.0.55.tar.gz
