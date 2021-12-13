@@ -10,8 +10,7 @@ RUN cd /opt/tomcat && curl --output /opt/tomcat/apache-tomcat-9.0.56.tar.gz http
 && mkdir tomcat9 \
 && mv /opt/tomcat/apache-tomcat-9.0.56/* tomcat9/
 
-RUN cd tomcat9/webapps \
-&& curl -S -u admin:'Rudraksh@123' --output /opt/tomcat/tomcat9/webappsdevopstraining.war http://3.16.161.236:8082/artifactory/sdc-anoop/com/nagarro/devopstraining-maven/0.0.1-SNAPSHOT/devopstraining-maven-0.0.1-SNAPSHOT.war
+RUN curl -S -u admin:'Rudraksh@123' --output /opt/tomcat/tomcat9/webappsdevopstraining.war http://3.16.161.236:8082/artifactory/sdc-anoop/com/nagarro/devopstraining-maven/0.0.1-SNAPSHOT/devopstraining-maven-0.0.1-SNAPSHOT.war
 EXPOSE 8080
 
 CMD ["/opt/tomcat/tomcat9/catalina.sh", "start"]
