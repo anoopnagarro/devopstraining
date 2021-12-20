@@ -10,7 +10,7 @@ RUN apt-get -y update
 RUN apt-get -y install curl
 
 #installing java
-RUN apt install default-jre
+RUN apt install -y default-jre
 
 RUN cd /opt/tomcat && curl --output /opt/tomcat/apache-tomcat-9.0.56.tar.gz https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.tar.gz \
 && tar xvfz /opt/tomcat/apache-tomcat-9.0.56.tar.gz \
