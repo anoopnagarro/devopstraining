@@ -52,7 +52,7 @@ pipeline {
         {
             steps
             {
-                sh 'docker run -d -p 8087:8080 devopstraining:latest'
+                sh 'docker run -d -p 9090:8080 devopstraining:latest'
             }
         }
         stage('Provision ec2 instance using Terrafrom')
